@@ -7,6 +7,10 @@ public class Toro {
 	private String annoNacimiento;
 	private int numOrden;
 	private String color;
+	
+	
+	
+	
 	public String getNombre() {
 		return nombre;
 	}

@@ -2,11 +2,13 @@ package co.edu.konradlorenz.view;
 
 import java.util.Scanner;
 
+
+
 public class Vista {
 	
 	static public Scanner sc = new Scanner(System.in);
 	
-	 public void mostrarMensaje(String mensaje) {
+	 public static void mostrarMensaje(String mensaje) {
 		
 		System.out.println(mensaje);
 		
@@ -14,9 +16,11 @@ public class Vista {
 	 
 	public static String pedirString() {
 		
-		return sc.nextLine();
+		return sc.next();
 	}
 	public static int pedirInt() {
+		
+		
 		return sc.nextInt();
 	}
 	public static byte pedirByte() {
@@ -28,5 +32,4 @@ public class Vista {
 		
 		return sc.nextBoolean();
 	}
-
 }

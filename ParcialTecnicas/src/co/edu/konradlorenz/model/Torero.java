@@ -6,6 +6,8 @@ public class Torero extends Persona implements Alternativa{
 	private String apodo;
 	private String fecha;
 	private Torero padrino;
+	private Manager apoderado;
+	private Premio recompensa;
 	
 	
 	public String getApodo() {
@@ -48,11 +50,7 @@ public class Torero extends Persona implements Alternativa{
 		// TODO Auto-generated method stub
 		super.setCedula(cedula);
 	}
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return super.toString();
-	}
+
 	public Torero(String nombre, String cedula, String apodo, String fecha) {
 		super(nombre, cedula);
 		this.apodo = apodo;
@@ -67,9 +65,43 @@ public class Torero extends Persona implements Alternativa{
 	public void asignarPadrino(Torero padrino) {
 		
 		this.padrino = padrino;
-		
-		
 	}
+	
+	public Torero getPadrino() {
+		return padrino;
+	}
+	
+	
+	
+	public Manager getApoderado() {
+		return apoderado;
+	}
+	
+	public void setApoderado(Manager apoderado) {
+		this.apoderado = apoderado;
+	}
+	
+	public Premio getRecompensa() {
+		return recompensa;
+	}
+	
+	public void setRecompensa(Premio recompensa) {
+		this.recompensa = recompensa;
+	}
+	@Override
+	public String toString() {
+		return "Torero [Nombre: " + getNombre() + ", Cedula: " + getCedula() + ", Padrino: " + obtenerPadrino() +  ", Apoderado: " + getApoderado() + ", Recompensa: " + getRecompensa() + ", Apodo: "+ getApodo() + ", Fecha: " + getFecha()+"]";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

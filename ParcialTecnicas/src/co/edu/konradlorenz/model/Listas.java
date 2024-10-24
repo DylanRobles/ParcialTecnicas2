@@ -4,22 +4,51 @@ import java.util.ArrayList;
 
 public class Listas {
 	
-	private ArrayList<Persona> listaPersonas = new ArrayList<>();
+	private ArrayList<Torero> listaTorero = new ArrayList<>();
+	private ArrayList<Manager> listaManager = new ArrayList<>();
 	private ArrayList<Toro> listaToros = new ArrayList<>();
 	private ArrayList<Corrida> listaCorrida = new ArrayList<>();
 	
+	public ArrayList<Torero> getListaTorero1(){
+		ArrayList <Torero> listaTorero = new ArrayList<>();
+		return listaTorero;
+	}
+	public ArrayList<Manager> getListaManager1(){
+		ArrayList <Manager> listaManager = new ArrayList<>();
+		return listaManager;
+	}
 	
-	public Persona getListaToreros() {
+	
+	
+	
+	public Torero getListaTorero() {
 		
-		for(int i = 0; i<listaPersonas.size(); i++) {
+		for(int i = 0; i<listaTorero.size(); i++) {
 			
-			return listaPersonas.get(i);
+			return listaTorero.get(i);
 		}
 		return null;
 	}
-	public void setListaToreros(Torero torero) {
-		listaPersonas.add(torero);
+	
+	
+	public void setListaTorero(Torero torero) {
+		listaTorero.add(torero);
 	}
+	
+	public Manager getListaManager() {
+		
+		for(int i = 0; i < listaManager.size(); i++) {
+			return listaManager.get(i);
+			
+		}
+		return null;
+	}
+	
+	public void setListaManager(Manager manager) {
+		listaManager.add(manager);
+		
+	}
+	
 	
 	
 	public Toro getListaToros() {

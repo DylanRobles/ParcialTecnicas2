@@ -5,6 +5,12 @@ public class Corrida {
 	private byte orden;
 	private String feria;
 	private int anno;
+	
+	
+	
+	
+	
+	
 	public byte getOrden() {
 		return orden;
 	}

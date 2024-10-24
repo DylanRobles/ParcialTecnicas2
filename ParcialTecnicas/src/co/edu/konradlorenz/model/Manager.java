@@ -7,6 +7,10 @@ public class Manager extends Persona {
 	
 	private String direccion;
 	private String telefono;
+	
+	
+	
+	
 	public String getDireccion() {
 		return direccion;
 	}
@@ -52,6 +56,12 @@ public class Manager extends Persona {
 		// TODO Auto-generated method stub
 		super.setCedula(cedula);
 	}
+	@Override
+	public String toString() {
+		return "Manager [Nombre: " + getNombre() + ", Cedula: " + getCedula() + ", Direccion: " + getDireccion() + ", Telefono: " + getTelefono()+"]";
+	}
+	
+	
 	
 	
 	

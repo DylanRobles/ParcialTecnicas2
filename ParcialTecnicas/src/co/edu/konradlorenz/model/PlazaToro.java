@@ -5,6 +5,13 @@ public class PlazaToro {
 	private String nombre;
 	private String localidad;
 	private String direccion;
+	private Corrida corrida;
+	
+	
+	
+	
+	
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -36,6 +43,13 @@ public class PlazaToro {
 	public String toString() {
 		return "PlazaToro [nombre=" + nombre + ", localidad=" + localidad + ", direccion=" + direccion + "]";
 	}
+	public Corrida getCorrida() {
+		return corrida;
+	}
+	public void setCorrida(Corrida corrida) {
+		this.corrida = corrida;
+	}
+	
 	
 	
 	
